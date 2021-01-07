@@ -8,6 +8,14 @@ Cinema.prototype.getTitlesList = function() {
   }); 
 }
 
+/* Same as above, using arrow function
+
+Cinema.prototype.filmTitles = function () {
+  return this.films.map((film) => {
+    return film.title;
+  });
+}; */
+
 Cinema.prototype.findFilm = function(filmTitle) {
   const found = this.films.find( function(film) {
     return film.title === filmTitle
